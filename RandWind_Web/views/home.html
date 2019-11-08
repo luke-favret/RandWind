@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>RandWind Number Generator</title>
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-light " style="background: #D7E6F3;">
+	  <a class="navbar-brand" href="home.html">
+		<img  src="../resources/img/randwind_logo.png" alt="" width="30%" height="30%">
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="home.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="player_info.html">My Generations</a>
+		  </li>
+		</ul>
+		<div class="form-inline my-2 my-lg-0">
+			<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+		</div>
+	  </div>
+	</nav>
+	<div class="container">
+		<br>
+		<br>
+		<div class="row">
+			
+			<div class="col-25" style="width: 100%;">
+				<div class="jumbotron" style="background: #D9E0E7; ">
+				  <h1 class="display-4" ">Welcome to Randwind!</h1>
+				  <p class="lead"> The random number generator that analyzes wind currents to create truly random numbers!</a></p>
+					<hr>
+				  	<form>
+					<div class="form-row">
+							<div class="col-md-3 mb-3">
+									<label for="generateAmount">How many numbers should be generated?</label>
+									<input type="number" class="form-control" id="generateAmount" placeholder="# of Numbers" value="1" required>
+							</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3 mb-3">
+								<label for="minimValue">Mininum Value</label>
+								<input type="number" class="form-control" id="minimValue" placeholder="Min Value" value="minVal" required>
+						</div>
+						<div class="col-md-3 mb-3">
+								<label for="maximValue">Maximum Value</label>
+								<input type="number" class="form-control" id="maximValue" placeholder="Max Value" value="maxVal" required>
+						</div>
+					</div>
+					<div class="form-row">
+							<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="customRadioInline1" name="uniquenessRadio" class="custom-control-input" required checked>
+									<label class="custom-control-label" for="customRadioInline1">Non-unique</label>
+								  </div>
+								  <div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="uniqueRadio" name="uniquenessRadio" class="custom-control-input">
+									<label class="custom-control-label" for="uniqueRadio">Unique</label>
+								  </div>
+					</div>
+					<br>
+					
+					<button class="btn btn-primary" type="submit">Generate!</button>
+				 	</form>
+					<hr>
+					<p>Built using bootstrap.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	  <script src="../resources/js/my_scripts.js"></script>
+  </body>
+</html>

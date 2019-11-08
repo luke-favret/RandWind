@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>2019 Season Stats</title>
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+  </head>
+  <body onload="loadStatsPage()">
+	<nav class="navbar navbar-expand-lg navbar-light " style="background: #D7E6F3;">
+		<a class="navbar-brand" href="home.html">
+		  <img  src="../resources/img/randwind_logo.png" alt="" width="30%" height="30%">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item ">
+			  <a class="nav-link" href="home.html">Home</a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="player_info.html">My Generations</a>
+			</li>
+		  </ul>
+		  <div class="form-inline my-2 my-lg-0">
+			  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Logout</button>
+		  </div>
+		</div>
+	  </nav>
+	<div class="container">
+		<br>
+		<div class="jumbotron">
+		  <h1 class="display-4">About <img  src="../resources/img/randwind_logo.png" alt="" width="30%" height="30%"></h1>
+		  <p class="lead">Detailed information on what RandWind is and how it works</p>
+		</div>
+
+		<div class="col-26"  style="overflow: hidden;">
+			<h2>What is RandWind?</h2>
+			<hr>
+			<p> Randwind is a random number generator that uses wind currents to generate randomness.</p>
+			<div class="bg-light" style="padding-left: 10px;">
+				<h2>How does Randwind work?</h2>
+				<hr>
+				<p>First, RandWind recieves the parameters you enter into the form. Then it passes the paramaters to our server. At this point, our backend begins analyzing a grayscale iamge of wind currents. We attempt to determine the area with the greatest volatility on the first frame, then we  measure the change of wind over time in this area. This change is completely unpredictable and generatores our randomness.
+					After this, we apply the parameters the user entered to the random 'seed' we just created, and from that generate the random numbers which are thne returned to the user.</p>
+			</div>
+			<h2>Who created RandWind?</h2>
+			<hr>
+			<p>Team 3 of the CSCI 3308 6:30-7:40 recitation</p>
+		</div>
+
+	</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="../resources/js/my_scripts.js"></script>
+</body>
+</html>
